@@ -8,7 +8,7 @@ The problem: manually checking for free parking slots wastes time — the same b
 - Red + Green LED
 
 ## Circuit Diagram
-![Circuit Diagram]()
+![Circuit Diagram](https://github.com/jahnaviroutu/parking-slot-monitoring-system/blob/799fe992ee1e2742e1ffce5bf83d7a26e39b456f/Parking%20slot%20monitoring%20sysytem-circuit%20diagram.png)
 
 What I built: an ultrasonic sensor (HC-SR04) measures distance in real time. If something’s within 10cm, the slot is marked OCCUPIED; otherwise FREE — shown live on an OLED display with LED indicators.
 
