@@ -14,12 +14,16 @@ What I built: an ultrasonic sensor (HC-SR04) measures distance in real time. If 
 
 ## How it works:
 1. Based on the distance of the car the output will be decided.
-2. **Decide the status** — If the calculated distance is less than 10 cm, the code assumes something is parked in the slot (**OCCUPIED**). Otherwise, the slot is considered **FREE**.
-3. 
+2. **Decide the status** — If the calculated distance is less than 10 cm, the code assumes something is parked in the slot (**OCCUPIED** and red led glows) .
+ 
+  ![working if vehicle is present](https://github.com/jahnaviroutu/parking-slot-monitoring-system/blob/5ba2cfebf32af5dbd8a730343464023a9e1392e4/working%20picture-1.png)
 
-4. **Show the result** — The status is printed on the OLED display using the Adafruit_GFX/SSD1306 libraries, and the matching LED (red for occupied, green for free) is switched on.
+4.   Otherwise, the slot is considered **FREE** and green led glows.
+   
 
-5. **Repeat continuously** — This entire cycle runs every 500 milliseconds inside `loop()`, so the display and LEDs update in near real-time as objects move in and out of range.
+5. **Show the result** — The status is printed on the OLED display using the Adafruit_GFX/SSD1306 libraries, and the matching LED (red for occupied, green for free) is switched on.
+
+6. **Repeat continuously** — This entire cycle runs every 500 milliseconds inside `loop()`, so the display and LEDs update in near real-time as objects move in and out of range.
 
 New things I learned this project:
 → Ultrasonic distance sensing (TRIG/ECHO pins, timing sound waves to calculate distance)
