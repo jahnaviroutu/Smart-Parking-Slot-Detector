@@ -32,6 +32,6 @@ New things I learned this project:
 → Debugging a real issue: my OLED stayed completely blank even though the code ran fine — turned out I forgot to set a text color, so the display was drawing invisible text the whole time. A good reminder that “no error” doesn’t always mean “working correctly.”
 
 ## Try it live:
-— ![Click here to simulate —](https://wokwi.com/projects/477577904547926017)
+— [Click here to simulate —](https://wokwi.com/projects/477577904547926017)
 
 #EmbeddedSystems #Arduino #ESP32 #ECE #IoT
